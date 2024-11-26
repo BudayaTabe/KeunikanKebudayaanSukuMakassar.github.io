@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis - Media Pembelajaran</title>
+    <link rel="stylesheet" a href="../css/Style3.css">
+</head>
+<body>
+    <header>
+        <h1>Media Pembelajaran</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="kuis.html" class="active">Kuis</a></li>
+                <li><a href="Referensi.html">Referensi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kuis Interaktif</h2>
+        <main>
+            <section class="quiz-container">
+                <!-- Pertanyaan 1 -->
+                <div class="question" id="question">
+                    <p>1. Saat kita ingin melewati orang lain, biasanya kita mengucapkan…</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Hai</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Selamat tinggal</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Halo</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="true"><i>Tabe’</i></button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+        
+                <!-- Pertanyaan 2 -->
+                <div class="question" id="question">
+                    <p>2. Apa arti dari "<i>siri’</i>" dalam budaya Bugis-Makassar?</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Kesabaran</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="true">Harga diri atau kehormatan</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Kebahagiaan</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Kecerdasan</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+
+                <!-- Pertanyaan 3 -->
+                <div class="question" id="question">
+                    <p>3. Dalam budaya <i>Tabe’</i>, membungkukkan badan sambil mengucapkan “<i>tabe’</i>” adalah contoh dari…</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false"><i>Tabe’</i> dalam bentuk makanan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false"><i>Tabe’</i> dalam bentuk tulisan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="true"><i>Tabe’</i> dalam bentuk tindakan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false"><i>Tabe’</i>dalam bentuk pakaian</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+        
+                <!-- Pertanyaan 4 -->
+                <div class="question" id="question">
+                    <p>4. Apa tujuan utama dari tradisi <i>Dengka Ase Lolo?</i></p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Untuk merayakan kelahiran</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="true">Untuk memulai upacara panen padi</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Untuk menyambut musim hujan</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Untuk mendekatkan diri kepada Tuhan</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+
+                <!-- Pertanyaan 5 -->
+                <div class="question" id="question">
+                    <p>5. <i>Uang panai’</i> dalam budaya Bugis-Makassar menunjukkan…</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Keserakahan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Kesederhanaan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Keinginan untuk menikah tanpa persiapan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="true">Keseriusan pria dalam melamar seorang perempuan</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+        
+                <!-- Pertanyaan 6 -->
+                <div class="question" id="question">
+                    <p>6. Tahap pertama dalam tradisi <i>antama’ balla</i> adalah…</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false"><i>Akkaliling balla</i></button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="true"><i>Accini allo</i> (pemilihan hari baik)</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false"><i>Nganre-nganre</i></button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false"><i>Barazanji</i></button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+
+                <!-- Pertanyaan 7 -->
+                <div class="question" id="question">
+                    <p>7. Apa yang dimaksud dengan <i>A'rate?</i></p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Tradisi berburu hewan</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Prosesi mandi kembang</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Upacara adat untuk membersihkan pusaka</button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="true">Acara zikir untuk mengenang Nabi Muhammad SAW</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+        
+                <!-- Pertanyaan 8 -->
+                <div class="question" id="question">
+                    <p>8. Pada usia berapa biasanya anak laki-laki melakukan <i>assunna'</i>?</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="true"> Sekitar 13 tahun</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">5-7 tahun</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">8-10 tahun</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">15-17 tahun</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+
+                <!-- Pertanyaan 9 -->
+                <div class="question" id="question">
+                    <p>9. Apa nama prosesi memberikan cairan darah kerbau pada benda pusaka?</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false"><i>Annangkasi</i></button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false"><i>Annyossoro'</i></button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="true"><i>Accera'</i></button></li>
+                        <li><button onclick="checkAnswer('question1', this)" data-correct="false">Annyoppeng</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+        
+                <!-- Pertanyaan 10 -->
+                <div class="question" id="question">
+                    <p>10. Mengapa daun pacar digunakan dalam upacara <i>Korongtigi</i>?</p>
+                    <ul class="choices">
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Melambangkan keberanian</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="true">Melambangkan kesucian dan kebersihan hati</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Melambangkan kekuatan</button></li>
+                        <li><button onclick="checkAnswer('question2', this)" data-correct="false">Melambangkan kebahagiaan</button></li>
+                    </ul>
+                    <div class="result"></div>
+                </div>
+
+            </section>
+        </main>
+        
+        <p id="score">Skor Anda: 0</p>
+    <footer>
+        <p>&copy; 2024 Media Pembelajaran. Apriliani Nur Auliya.</p>
+    </footer>
+
+    <script src="../Jss/Sricpt3.js"></script>
+</body>
+</html>
