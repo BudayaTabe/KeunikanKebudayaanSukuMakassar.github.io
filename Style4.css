@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset default margin dan padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Styling untuk section utama */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0d0d0d;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Styling untuk daftar referensi */
+.reference-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.reference-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.reference-item:hover {
+    transform: translateY(-10px);
+}
+
+.reference-item h3 {
+    font-size: 1.6em;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+}
+
+.reference-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #4CAF50;
+}
+
+/* Gaya untuk dialog popup */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animasi popup */
+@keyframes fadeIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Latar belakang overlay */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Tombol */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+button.close-btn {
+    background-color: #dc3545;
+}
+
+button.close-btn:hover {
+    background-color: #a71d2a;
+}
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsif untuk layar ponsel */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .reference-item {
+        width: 90%;
+    }
+
+    .reference-item p {
+        font-size: 0.85em;
+    }
+}
